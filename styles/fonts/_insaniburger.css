@@ -1,15 +1,13 @@
 @font-face {
     font-family: 'Insanibc';
-    src: url('/fonts/insaniburger/Insanibc.ttf') format('truetype');
-        font-weight: 100 900;
+    src: url('./insaniburger/Insanibc.ttf') format('truetype');
+        font-weight: normal;
         font-display: swap;
-        font-style: normal;
 }
 
 @font-face {
     font-family: 'Insanibu';
-    src: url('/fonts/insaniburger/Insanibu.ttf') format('truetype');
-        font-weight: 100 900;
+    src: url('./insaniburger/Insanibu.ttf') format('truetype');
+        font-weight: normal;
         font-display: swap;
-        font-style: normal;
 }

@@ -1,34 +1,127 @@
-/* @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"); */
+/* Imports */
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 @import "_variables.css";
 @import "fonts/_insaniburger.css";
 @import "fonts/_archivo.css";
 
-body{
-    color: rgb(var(--color-text));
-}
+
+/* Redéfinition des balises */
 
 h1{
     font-size: var(--typescale-h1);
-    font-family: Insanibu, sans-serif;
+    font-family: "Insanibu", sans-serif;
 }
 
 h2{
     font-size: var(--typescale-h2);
-    font-family: Insanibu, sans-serif;
+    font-family: "Insanibu", sans-serif;
 }
 
 h3{
     font-size: var(--typescale-h3);
-    font-family: Archivo, sans-serif;
+    font-family: "Archivo", sans-serif;
 }
 
 p{
     font-size: var(--typescale-text);
-    font-family: Archivo, sans-serif;
+    font-family: "Archivo", sans-serif;
 }
 
 .mini_texte{
     font-size: var(--typescale-small-text);
-    font-family: Archivo, sans-serif;
+    font-family: "Archivo", sans-serif;
+}
+
+span{
+    color: rgb(var(--color-primary-light));
+}
+
+strong{
+    font-family: "Archivo-Bold", sans-serif;
+}
+
+
+a{
+    font-size: var(--typescale-text);
+    font-family: "Archivo", sans-serif;
+}
+
+
+
+/* Style commun des pages */
+
+body{
+    color: rgb(var(--color-text));
+    background-color: rgb(var(--color-background));
+}
+
+header div p{
+    color: rgb(var(--color-accent-light));
+}
+
+hr{
+    height: 3px;
+    border-color: rgb(var(--color-secondary-light));
+    background-color: rgb(var(--color-secondary-light));
+}
+
+
+/* Les identifiants */
+
+
+
+/* Les classes */
+
+/* Navbar */
+#navBar_select{
+    display: flex;
+    flex-direction: column;
+}
+
+#navBar_select a{
+    color: rgb(var(--color-primary-light));
+}
+
+.navBar{
+    background-color: rgb(var(--color-background));
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid;
+    border-bottom-color: rgb(var(--color-secondary-light));
+    border-bottom-width: 2px;
+}
+
+.navBar div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.3rem 1rem;
+}
+
+.navBar svg{
+    margin-right: 0.7rem;
+}
+
+.navBar a, .navBar h3{
+    font-family: "Archivo-Bold", sans-serif;
+    color: rgb(var(--color-text));
+}
+
+.navBar div a{
+    margin: 0 2rem;
+}
+
+.monCV{
+    border-left: solid;
+    border-left-color: rgb(var(--color-secondary-light));
+}
+
+.monCV svg{
+    margin: 0 0.5rem 0 1rem;
 }
