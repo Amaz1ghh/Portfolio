@@ -1,0 +1,34 @@
+/* @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"); */
+
+@import "_variables.css";
+@import "fonts/_insaniburger.css";
+@import "fonts/_archivo.css";
+
+body{
+    color: rgb(var(--color-text));
+}
+
+h1{
+    font-size: var(--typescale-h1);
+    font-family: Insanibu, sans-serif;
+}
+
+h2{
+    font-size: var(--typescale-h2);
+    font-family: Insanibu, sans-serif;
+}
+
+h3{
+    font-size: var(--typescale-h3);
+    font-family: Archivo, sans-serif;
+}
+
+p{
+    font-size: var(--typescale-text);
+    font-family: Archivo, sans-serif;
+}
+
+.mini_texte{
+    font-size: var(--typescale-small-text);
+    font-family: Archivo, sans-serif;
+}
