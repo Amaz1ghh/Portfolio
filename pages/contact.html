@@ -8,13 +8,50 @@
       <title>Portfolio</title>
       
       <!--lien css et javaScript-->
-      <link rel="stylesheet" type="text/css" href="/styles/style.css">
-      <link rel="stylesheet" type="text/css" href="../styles/contact.css">
+      <link rel="stylesheet" type="text/css" href="../styles/sytle.css">
+      <link rel="stylesheet" type="text/css" href="../styles/pages/contact.css">
       <script src="scripts/script.js" defer></script>
 
   </head>
   <!--BODY-->
   <body>
+
+    <!--navbar-->
+    <div class="navBar">
+      <a href="/index" style="text-decoration:none">
+        <div>
+          <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27 29.8464C27 31.605 27.6321 33.2915 28.7573 34.535C29.8826 35.7785 31.4087 36.4771 33 36.4771C34.5913 36.4771 36.1174 35.7785 37.2426 34.535C38.3678 33.2915 39 31.605 39 29.8464C39 26.3293 37.7357 22.9562 35.4853 20.4691C33.2348 17.9821 30.1826 16.585 27 16.585C23.8174 16.585 20.7651 17.9821 18.5147 20.4691C16.2643 22.9562 15 26.3293 15 29.8464C15 35.1221 16.8964 40.1818 20.2721 43.9123C23.6477 47.6428 28.2261 49.7386 33 49.7386C37.7739 49.7386 42.3522 47.6428 45.7279 43.9123C49.1035 40.1818 51 35.1221 51 29.8464C51 22.8121 48.4714 16.0659 43.9705 11.0919C39.4697 6.11789 33.3652 3.32352 27 3.32352C20.6348 3.32352 14.5303 6.11789 10.0294 11.0919C5.52856 16.0659 3 22.8121 3 29.8464C3 38.6393 6.1607 47.072 11.7868 53.2895C17.4129 59.507 25.0435 63 33 63C40.9565 63 48.5871 59.507 54.2132 53.2895C59.8393 47.072 63 38.6393 63 29.8464C63.011 21.2052 60.4611 12.7978 55.74 5.9095C55.2803 5.16031 54.6867 4.52305 53.9957 4.037C53.3047 3.55095 52.531 3.2264 51.7222 3.08334C50.9134 2.94028 50.0867 2.98174 49.2929 3.20516C48.4992 3.42859 47.7553 3.82925 47.107 4.38247C46.4586 4.93569 45.9197 5.62974 45.5233 6.42187C45.1269 7.214 44.8815 8.08743 44.8021 8.98836C44.7228 9.88929 44.8112 10.7986 45.0619 11.6604C45.3126 12.5221 45.7204 13.318 46.26 13.999" fill="#0000CD"/>
+            <path d="M27 29.8464C27 31.605 27.6321 33.2915 28.7573 34.535C29.8826 35.7785 31.4087 36.4771 33 36.4771C34.5913 36.4771 36.1174 35.7785 37.2426 34.535C38.3678 33.2915 39 31.605 39 29.8464C39 26.3293 37.7357 22.9562 35.4853 20.4691C33.2348 17.9821 30.1826 16.585 27 16.585C23.8174 16.585 20.7651 17.9821 18.5147 20.4691C16.2643 22.9562 15 26.3293 15 29.8464C15 35.1221 16.8964 40.1818 20.2721 43.9123C23.6477 47.6428 28.2261 49.7386 33 49.7386C37.7739 49.7386 42.3522 47.6428 45.7279 43.9123C49.1035 40.1818 51 35.1221 51 29.8464C51 22.8121 48.4714 16.0659 43.9705 11.0919C39.4697 6.11789 33.3652 3.32352 27 3.32352C20.6348 3.32352 14.5303 6.11789 10.0294 11.0919C5.52856 16.0659 3 22.8121 3 29.8464C3 38.6393 6.1607 47.072 11.7868 53.2895C17.4129 59.507 25.0435 63 33 63C40.9565 63 48.5871 59.507 54.2132 53.2895C59.8393 47.072 63 38.6393 63 29.8464C63.011 21.2052 60.4611 12.7978 55.74 5.9095C55.2803 5.16031 54.6867 4.52305 53.9957 4.037C53.3047 3.55095 52.531 3.2264 51.7222 3.08334C50.9134 2.94028 50.0867 2.98174 49.2929 3.20516C48.4992 3.42859 47.7553 3.82925 47.107 4.38247C46.4586 4.93569 45.9197 5.62974 45.5233 6.42187C45.1269 7.214 44.8815 8.08743 44.8021 8.98836C44.7228 9.88929 44.8112 10.7986 45.0619 11.6604C45.3126 12.5221 45.7204 13.318 46.26 13.999" stroke="#1F1F1F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Portfolio</h3>
+        </div>
+      </a>
+      <ul>
+        <li>
+          <a href="./index.html" style="text-decoration:none">Mon profil</a>
+          <hr>
+        </li>
+        <li>
+          <a href="./competences.html" style="text-decoration:none">Mes projets</a>
+          <hr>
+        </li>
+        <li id="navBar_select">
+          <a href="/" style="text-decoration:none">Me contacter</a>
+          <hr>
+        </li>
+      </ul>
+      <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none"  download="AIT-OUAZZOU_YAN_CV.pdf">
+        <div class="monCV">
+          <h3>Mon CV</h3>
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M43 29.6668V38.5557C43 39.7344 42.5317 40.8649 41.6983 41.6984C40.8648 42.5319 39.7343 43.0001 38.5556 43.0001H7.44444C6.2657 43.0001 5.13524 42.5319 4.30175 41.6984C3.46825 40.8649 3 39.7344 3 38.5557V29.6668" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.8889 18.5555L23 29.6666L34.1111 18.5555" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M23 29.6667V3" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+    </div>
 
     <!--header-->
     <header>
@@ -28,7 +65,69 @@
     
     <!--footer-->
     <footer>
-
+      <!--coordonées-->
+      <div>
+        <h4 class="coordTaille">Coordonnées</h4>
+        <div>
+          <svg width="34" height="29" viewBox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 2H29C30.65 2 32 3.40625 32 5.125V23.875C32 25.5938 30.65 27 29 27H5C3.35 27 2 25.5938 2 23.875V5.125C2 3.40625 3.35 2 5 2Z" fill="white" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 2H29C30.65 2 32 3.40625 32 5.125V23.875C32 25.5938 30.65 27 29 27H5C3.35 27 2 25.5938 2 23.875V5.125C2 3.40625 3.35 2 5 2Z" fill="white" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M32 6.37524L17 16.3752L2 6.37524" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>        
+          <p class="mini_texte">yan.aitouazzou0@gmail.com</p>
+        </div>
+        <div>
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.272 1.68311C10.7456 0.41168 9.35799 -0.265049 8.03187 0.0972402L2.01651 1.73779C0.827112 2.0659 0 3.14593 0 4.37635C0 21.2877 13.7123 35 30.6236 35C31.8541 35 32.9341 34.1729 33.2622 32.9835L34.9028 26.9681C35.265 25.642 34.5883 24.2544 33.3169 23.728L26.7547 20.9938C25.6405 20.529 24.3485 20.8502 23.5898 21.7867L20.8282 25.1567C16.0159 22.8804 12.1196 18.9841 9.84332 14.1718L13.2133 11.4171C14.1498 10.6515 14.471 9.36636 14.0062 8.25215L11.272 1.68994V1.68311Z" fill="white"/>
+          </svg>            
+          <p class="mini_texte">07 67 42 75 50</p>
+        </div>
+        <div>
+          <svg width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 16.3182C32 27.4545 17 37 17 37C17 37 2 27.4545 2 16.3182C2 12.5208 3.58035 8.87888 6.3934 6.1937C9.20644 3.50852 13.0218 2 17 2C20.9782 2 24.7936 3.50852 27.6066 6.1937C30.4196 8.87888 32 12.5208 32 16.3182Z" fill="white" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.2002 21.0909C20.5139 21.0909 23.2002 18.5267 23.2002 15.3636C23.2002 12.2005 20.5139 9.63635 17.2002 9.63635C13.8865 9.63635 11.2002 12.2005 11.2002 15.3636C11.2002 18.5267 13.8865 21.0909 17.2002 21.0909Z" fill="black" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="mini_texte">Saint Méen le Grand (35290), FRANCE</p>
+        </div>
+      </div>
+      <!--navigation-->
+      <div>
+        <h4>Navigation</h4>
+        <div>
+          <a href="index.html" style="text-decoration:none" class="mini_texte">MON PROFIL</a>
+        </div>
+        <div>
+          <a href="competences.html" style="text-decoration:none" class="mini_texte">MES PROJETS</a>
+        </div>
+        <div>
+          <a href="contact.html" style="text-decoration:none" class="mini_texte">ME CONTACTER</a>
+        </div>
+      </div>
+      <!--réseaux-->
+      <div class="liensReseaux">
+        <h4>Réseaux</h4>
+        <a href="https://github.com/Amaz1ghh" style="text-decoration:none">
+          <div>
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="20" fill="white"/>
+              <path d="M16.4261 35.8496C5.63171 38.4264 8.31804 26.7129 4.34277 25.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24.9359 40V33.3334C25.1674 31.2455 24.5696 29.1502 23.2716 27.5C28.2645 27.5 33.2574 24.1667 33.2574 18.3334C33.3905 16.25 32.808 14.2 31.5931 12.5C32.0591 10.5834 32.0591 8.58335 31.5931 6.66669C31.5931 6.66669 29.9288 6.66669 26.6002 9.16669C22.2064 8.33335 17.6795 8.33335 13.2857 9.16669C9.95714 6.66669 8.29284 6.66669 8.29284 6.66669C7.79355 8.58335 7.79355 10.5834 8.29284 12.5C7.08101 14.1932 6.49285 16.2547 6.62853 18.3334C6.62853 24.1667 11.6214 27.5 16.6144 27.5C15.9653 28.3167 15.4826 29.25 15.1997 30.25C14.9168 31.25 14.8336 32.3 14.9501 33.3334V40" fill="black"/>
+              <path d="M24.9359 40V33.3334C25.1674 31.2455 24.5696 29.1502 23.2716 27.5C28.2645 27.5 33.2574 24.1667 33.2574 18.3334C33.3905 16.25 32.808 14.2 31.5931 12.5C32.0591 10.5834 32.0591 8.58335 31.5931 6.66669C31.5931 6.66669 29.9288 6.66669 26.6002 9.16669C22.2064 8.33335 17.6795 8.33335 13.2857 9.16669C9.95714 6.66669 8.29284 6.66669 8.29284 6.66669C7.79355 8.58335 7.79355 10.5834 8.29284 12.5C7.08101 14.1932 6.49285 16.2547 6.62853 18.3334C6.62853 24.1667 11.6214 27.5 16.6144 27.5C15.9653 28.3167 15.4826 29.25 15.1997 30.25C14.9168 31.25 14.8336 32.3 14.9501 33.3334V40" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                      
+            <p class="mini_texte">Github</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/yan-ait-ouazzou-357973300/" style="text-decoration:none">          
+          <div>
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.5 13.0526C29.2847 13.0526 31.9555 14.2171 33.9246 16.2899C35.8937 18.3626 37 21.1739 37 24.1052V37H30V24.1052C30 23.1281 29.6312 22.191 28.9748 21.5001C28.3185 20.8092 27.4282 20.421 26.5 20.421C25.5717 20.421 24.6815 20.8092 24.0251 21.5001C23.3687 22.191 23 23.1281 23 24.1052V37H16V24.1052C16 21.1739 17.1062 18.3626 19.0754 16.2899C21.0445 14.2171 23.7152 13.0526 26.5 13.0526Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.99999 14.8947H2V36.9999H8.99999V14.8947Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.49999 9.36842C7.43299 9.36842 8.99999 7.71894 8.99999 5.68421C8.99999 3.64948 7.43299 2 5.49999 2C3.567 2 2 3.64948 2 5.68421C2 7.71894 3.567 9.36842 5.49999 9.36842Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="mini_texte reposLinkedin">Linkedin</p>
+          </div>
+        </a>
+      </div>
     </footer>
 
   </body>
