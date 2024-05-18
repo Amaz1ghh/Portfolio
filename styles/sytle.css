@@ -67,6 +67,10 @@ hr{
     background-color: rgb(var(--color-secondary-light));
 }
 
+body > hr, main > hr{
+    margin: 80px 100px;
+}
+
 
 /* Les identifiants */
 
@@ -75,9 +79,9 @@ hr{
 /* Les classes */
 
 /* Navbar */
-#navBar_select{
+
+#navBar_select hr{
     display: flex;
-    flex-direction: column;
 }
 
 #navBar_select a{
@@ -97,11 +101,23 @@ hr{
     border-bottom-width: 2px;
 }
 
-.navBar div{
+.navBar div, .navBar ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0.3rem 1rem;
+}
+
+.navBar ul hr{
+    width: 10vh;
+    border-color: rgb(var(--color-accent));
+    display: none;
+}
+
+.navBar li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navBar svg{
@@ -113,7 +129,7 @@ hr{
     color: rgb(var(--color-text));
 }
 
-.navBar div a{
+.navBar ul a{
     margin: 0 2rem;
 }
 

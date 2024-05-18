@@ -17,14 +17,11 @@
 
     /* Texte */
 
-    --font-heading: Switzer, Poppins sans-serif;
     --typescale-h1: 5.625rem;
     --typescale-h2: 4.1875rem;
     --typescale-h3: 3.1875rem;
     --typescale-text: 1.75rem;
     --typescale-small-text: 1rem;
     --typescale-large-text: 2.375rem;
-
-    --border-radius: 10px;
 
 }
