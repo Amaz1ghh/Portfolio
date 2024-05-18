@@ -60,7 +60,7 @@
       <div>
         <div>
           <h1>Yan</h1>
-          <p><strong>18 ans</strong></p>
+          <p>18 ans</p>
         </div>
         <h1>Ait ouazzou</h1>
         <hr>
@@ -76,50 +76,64 @@
 
     <!--main-->
     <main>
-      <section>
+      <section class="section1_profil">
         <h1><span>À propos</span> de moi !<h1>
         <div>
           <img src="../public/images/yan.png" alt="Image Yan Ait ouazzou" title="Yan Ait ouazzou">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <span>tempor</span>
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim <span>veniam</span>, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex</p>
+          <p>Bienvenue sur mon <span>Portfolio</span> ! Je suis un étudiant de 18 ans en 1re année de BUT informatique
+            à l'IUT de Lannion mais avant tout un <span>passionné</span> d'informatique.</p>
         </div>
         <div>
-          <p>Lorem <span>ipsum</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            <span>incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            <span>nostrud</span> exercitation ullamco laboris nisi ut aliquip ex</p>
-          <a>Le bouton vers projet</a>
+          <p>Je suis actuellement à la recherche d'une <span>alternance</span> pour ma 2e et 3e année de BUT
+            en tant que développeur <span>logiciels</span>. N'hésitez pas à me <span>contacter</span> si mon profil vous intéresse !</p>
+          <button onclick="window.location.href = 'competences.html';" type="button" name="voir_projets">
+            Mes projets
+            <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.9999 5L44.9999 20L36.9999 35" stroke="#AE37FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 20H45" stroke="#AE37FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
         </div>
       </section>
       <hr>
-      <section>
+      <section class="section2_profil">
         <h1>Ma <span>formation</span></h1>
         <div>
-          <h3>2023 - 2026</h3>
-          <h3>BUT <span>Informatique</span></h3>
-          <hr>
-          <h4>IUT de Lannion</h4>
-          <ul>
-            <li><strong>Parcours A</strong> (réalisation d'applications - conception, développement, validation)</li>
-          </ul>
           <div>
-            <a>bouton visiter le site</a>
-            <a>bouton voir le programme</a>
+            <h3 class="dateForma">2023 - 2026</h3>
+            <h3>BUT <span>Informatique</span></h3>
+            <hr>
+            <h4>IUT de Lannion</h4>
+            <ul style="list-style-type:disc;">
+              <li><strong>Parcours A</strong> (réalisation d'applications - conception, développement, validation)</li>
+            </ul>
+            <div>
+              <button onclick="window.location.href = 'https://iut-lannion.univ-rennes.fr';" type="button" name="voir_site_IUT">
+                Visiter le site
+              </button>
+              <button onclick="window.location.href = 'https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf';" type="button" name="voir_prog_IUT">
+                Voir le programme
+              </button>
+            </div>
           </div>
-        </div>
-        <div>
-          <h3>2020 - 2023</h3>
-          <h3>Baccalauréat <span>Général</span></h3>
-          <hr>
-          <h4>Lycée Renée Cassin</h4>
-          <ul>
-            <li>NSI</li>
-            <li>Mathématiques</li>
-            <li>Physique-Chimie <span>(1ère)</span></li>
-          </ul>
           <div>
-            <a>bouton visiter le site</a>
-            <a>bouton voir le programme</a>
+            <h3 class="dateForma">2020 - 2023</h3>
+            <h3>Baccalauréat <span>Général</span></h3>
+            <hr>
+            <h4>Lycée Renée Cassin</h4>
+            <ul style="list-style-type:disc;">
+              <li><strong>NSI</strong></li>
+              <li><strong>Mathématiques</strong></li>
+              <li><strong>Physique-Chimie</strong> <span>(1ère)</span></li>
+            </ul>
+            <div>
+              <button onclick="window.location.href = 'https://www.lycee-rene-cassin-montfort-sur-meu.ac-rennes.fr';" type="button" name="voir_site_Lycee">
+                Visiter le site
+              </button>
+              <button onclick="window.location.href = 'https://www.education.gouv.fr/les-programmes-du-lycee-general-et-technologique-9812';" type="button" name="voir_prog_Lycee">
+                Voir le programme
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -131,52 +145,65 @@
     <footer>
       <!--coordonées-->
       <div>
-        <div href="mailto:yan.aitouazzou0@gmail.com">
+        <h4 class="coordTaille">Coordonnées</h4>
+        <div>
           <svg width="34" height="29" viewBox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 2H29C30.65 2 32 3.40625 32 5.125V23.875C32 25.5938 30.65 27 29 27H5C3.35 27 2 25.5938 2 23.875V5.125C2 3.40625 3.35 2 5 2Z" fill="white" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M5 2H29C30.65 2 32 3.40625 32 5.125V23.875C32 25.5938 30.65 27 29 27H5C3.35 27 2 25.5938 2 23.875V5.125C2 3.40625 3.35 2 5 2Z" fill="white" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M32 6.37524L17 16.3752L2 6.37524" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>        
-          <p>yan.aitouazzou0@gmail.com</p>
+          <p class="mini_texte">yan.aitouazzou0@gmail.com</p>
         </div>
         <div>
           <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.272 1.68311C10.7456 0.41168 9.35799 -0.265049 8.03187 0.0972402L2.01651 1.73779C0.827112 2.0659 0 3.14593 0 4.37635C0 21.2877 13.7123 35 30.6236 35C31.8541 35 32.9341 34.1729 33.2622 32.9835L34.9028 26.9681C35.265 25.642 34.5883 24.2544 33.3169 23.728L26.7547 20.9938C25.6405 20.529 24.3485 20.8502 23.5898 21.7867L20.8282 25.1567C16.0159 22.8804 12.1196 18.9841 9.84332 14.1718L13.2133 11.4171C14.1498 10.6515 14.471 9.36636 14.0062 8.25215L11.272 1.68994V1.68311Z" fill="white"/>
           </svg>            
-          <p>07 67 42 75 50</p>
+          <p class="mini_texte">07 67 42 75 50</p>
         </div>
         <div>
           <svg width="34" height="39" viewBox="0 0 34 39" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32 16.3182C32 27.4545 17 37 17 37C17 37 2 27.4545 2 16.3182C2 12.5208 3.58035 8.87888 6.3934 6.1937C9.20644 3.50852 13.0218 2 17 2C20.9782 2 24.7936 3.50852 27.6066 6.1937C30.4196 8.87888 32 12.5208 32 16.3182Z" fill="white" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M17.2002 21.0909C20.5139 21.0909 23.2002 18.5267 23.2002 15.3636C23.2002 12.2005 20.5139 9.63635 17.2002 9.63635C13.8865 9.63635 11.2002 12.2005 11.2002 15.3636C11.2002 18.5267 13.8865 21.0909 17.2002 21.0909Z" fill="black" stroke="white" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <p>Saint Méen le Grand (35290), FRANCE</p>
+          <p class="mini_texte">Saint Méen le Grand (35290), FRANCE</p>
         </div>
       </div>
       <!--navigation-->
       <div>
-        <a href="index.html">Mon profil</a>
-        <a href="competences.html">Mes projets</a>
-        <a href="contact.html">Me contacter</a>
+        <h4>Navigation</h4>
+        <div>
+          <a href="index.html" style="text-decoration:none" class="mini_texte">MON PROFIL</a>
+        </div>
+        <div>
+          <a href="competences.html" style="text-decoration:none" class="mini_texte">MES PROJETS</a>
+        </div>
+        <div>
+          <a href="contact.html" style="text-decoration:none" class="mini_texte">ME CONTACTER</a>
+        </div>
       </div>
       <!--réseaux-->
-      <div>
-        <a href="https://github.com/Amaz1ghh">
-          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20" cy="20" r="20" fill="white"/>
-            <path d="M16.4261 35.8496C5.63171 38.4264 8.31804 26.7129 4.34277 25.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M24.9359 40V33.3334C25.1674 31.2455 24.5696 29.1502 23.2716 27.5C28.2645 27.5 33.2574 24.1667 33.2574 18.3334C33.3905 16.25 32.808 14.2 31.5931 12.5C32.0591 10.5834 32.0591 8.58335 31.5931 6.66669C31.5931 6.66669 29.9288 6.66669 26.6002 9.16669C22.2064 8.33335 17.6795 8.33335 13.2857 9.16669C9.95714 6.66669 8.29284 6.66669 8.29284 6.66669C7.79355 8.58335 7.79355 10.5834 8.29284 12.5C7.08101 14.1932 6.49285 16.2547 6.62853 18.3334C6.62853 24.1667 11.6214 27.5 16.6144 27.5C15.9653 28.3167 15.4826 29.25 15.1997 30.25C14.9168 31.25 14.8336 32.3 14.9501 33.3334V40" fill="black"/>
-            <path d="M24.9359 40V33.3334C25.1674 31.2455 24.5696 29.1502 23.2716 27.5C28.2645 27.5 33.2574 24.1667 33.2574 18.3334C33.3905 16.25 32.808 14.2 31.5931 12.5C32.0591 10.5834 32.0591 8.58335 31.5931 6.66669C31.5931 6.66669 29.9288 6.66669 26.6002 9.16669C22.2064 8.33335 17.6795 8.33335 13.2857 9.16669C9.95714 6.66669 8.29284 6.66669 8.29284 6.66669C7.79355 8.58335 7.79355 10.5834 8.29284 12.5C7.08101 14.1932 6.49285 16.2547 6.62853 18.3334C6.62853 24.1667 11.6214 27.5 16.6144 27.5C15.9653 28.3167 15.4826 29.25 15.1997 30.25C14.9168 31.25 14.8336 32.3 14.9501 33.3334V40" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>                      
-          <p>Github</p>
+      <div class="liensReseaux">
+        <h4>Réseaux</h4>
+        <a href="https://github.com/Amaz1ghh" style="text-decoration:none">
+          <div>
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="20" fill="white"/>
+              <path d="M16.4261 35.8496C5.63171 38.4264 8.31804 26.7129 4.34277 25.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24.9359 40V33.3334C25.1674 31.2455 24.5696 29.1502 23.2716 27.5C28.2645 27.5 33.2574 24.1667 33.2574 18.3334C33.3905 16.25 32.808 14.2 31.5931 12.5C32.0591 10.5834 32.0591 8.58335 31.5931 6.66669C31.5931 6.66669 29.9288 6.66669 26.6002 9.16669C22.2064 8.33335 17.6795 8.33335 13.2857 9.16669C9.95714 6.66669 8.29284 6.66669 8.29284 6.66669C7.79355 8.58335 7.79355 10.5834 8.29284 12.5C7.08101 14.1932 6.49285 16.2547 6.62853 18.3334C6.62853 24.1667 11.6214 27.5 16.6144 27.5C15.9653 28.3167 15.4826 29.25 15.1997 30.25C14.9168 31.25 14.8336 32.3 14.9501 33.3334V40" fill="black"/>
+              <path d="M24.9359 40V33.3334C25.1674 31.2455 24.5696 29.1502 23.2716 27.5C28.2645 27.5 33.2574 24.1667 33.2574 18.3334C33.3905 16.25 32.808 14.2 31.5931 12.5C32.0591 10.5834 32.0591 8.58335 31.5931 6.66669C31.5931 6.66669 29.9288 6.66669 26.6002 9.16669C22.2064 8.33335 17.6795 8.33335 13.2857 9.16669C9.95714 6.66669 8.29284 6.66669 8.29284 6.66669C7.79355 8.58335 7.79355 10.5834 8.29284 12.5C7.08101 14.1932 6.49285 16.2547 6.62853 18.3334C6.62853 24.1667 11.6214 27.5 16.6144 27.5C15.9653 28.3167 15.4826 29.25 15.1997 30.25C14.9168 31.25 14.8336 32.3 14.9501 33.3334V40" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                      
+            <p class="mini_texte">Github</p>
+          </div>
         </a>
-        <a href="https://www.linkedin.com/in/yan-ait-ouazzou-357973300/">          
-          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26.5 13.0526C29.2847 13.0526 31.9555 14.2171 33.9246 16.2899C35.8937 18.3626 37 21.1739 37 24.1052V37H30V24.1052C30 23.1281 29.6312 22.191 28.9748 21.5001C28.3185 20.8092 27.4282 20.421 26.5 20.421C25.5717 20.421 24.6815 20.8092 24.0251 21.5001C23.3687 22.191 23 23.1281 23 24.1052V37H16V24.1052C16 21.1739 17.1062 18.3626 19.0754 16.2899C21.0445 14.2171 23.7152 13.0526 26.5 13.0526Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M8.99999 14.8947H2V36.9999H8.99999V14.8947Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M5.49999 9.36842C7.43299 9.36842 8.99999 7.71894 8.99999 5.68421C8.99999 3.64948 7.43299 2 5.49999 2C3.567 2 2 3.64948 2 5.68421C2 7.71894 3.567 9.36842 5.49999 9.36842Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <p>Linkedin</p>
+        <a href="https://www.linkedin.com/in/yan-ait-ouazzou-357973300/" style="text-decoration:none">          
+          <div>
+            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.5 13.0526C29.2847 13.0526 31.9555 14.2171 33.9246 16.2899C35.8937 18.3626 37 21.1739 37 24.1052V37H30V24.1052C30 23.1281 29.6312 22.191 28.9748 21.5001C28.3185 20.8092 27.4282 20.421 26.5 20.421C25.5717 20.421 24.6815 20.8092 24.0251 21.5001C23.3687 22.191 23 23.1281 23 24.1052V37H16V24.1052C16 21.1739 17.1062 18.3626 19.0754 16.2899C21.0445 14.2171 23.7152 13.0526 26.5 13.0526Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.99999 14.8947H2V36.9999H8.99999V14.8947Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.49999 9.36842C7.43299 9.36842 8.99999 7.71894 8.99999 5.68421C8.99999 3.64948 7.43299 2 5.49999 2C3.567 2 2 3.64948 2 5.68421C2 7.71894 3.567 9.36842 5.49999 9.36842Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="mini_texte reposLinkedin">Linkedin</p>
+          </div>
         </a>
       </div>
     </footer>

@@ -24,14 +24,18 @@ h3{
     font-family: "Archivo", sans-serif;
 }
 
-p{
+h4{
+    font-size: var(--typescale-h4);
+    font-family: "Archivo", sans-serif;
+}
+
+p, li{
     font-size: var(--typescale-text);
     font-family: "Archivo", sans-serif;
 }
 
 .mini_texte{
     font-size: var(--typescale-small-text);
-    font-family: "Archivo", sans-serif;
 }
 
 span{
@@ -44,8 +48,14 @@ strong{
 
 
 a{
+    color: rgb(var(--color-text));
     font-size: var(--typescale-text);
     font-family: "Archivo", sans-serif;
+}
+
+button{
+    font-size: var(--typescale-text);
+    font-family: "Archivo-Bold", sans-serif;
 }
 
 
@@ -57,10 +67,6 @@ body{
     background-color: rgb(var(--color-background));
 }
 
-header div p{
-    color: rgb(var(--color-accent-light));
-}
-
 hr{
     height: 3px;
     border-color: rgb(var(--color-secondary-light));
@@ -68,7 +74,7 @@ hr{
 }
 
 body > hr, main > hr{
-    margin: 80px 100px;
+    margin: 60px 100px;
 }
 
 
@@ -77,6 +83,10 @@ body > hr, main > hr{
 
 
 /* Les classes */
+
+
+
+
 
 /* Navbar */
 
@@ -140,4 +150,51 @@ body > hr, main > hr{
 
 .monCV svg{
     margin: 0 0.5rem 0 1rem;
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20% 4% 15%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8.5vh;
+    margin-top: 3vh;
+}
+
+
+footer div div svg{
+    margin-right: 6%;
+}
+
+footer h4{
+    font-size: var(--typescale-h4);
+    font-family: "Insanibu", sans-serif;
+}
+
+footer p, footer a{
+    font-family: "Archivo-Bold", sans-serif;
+}
+
+.reposLinkedin{
+    margin-top: 8%;
+}
+
+.coordTaille{
+    width: 23.5vw;
 }
