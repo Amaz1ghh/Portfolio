@@ -1,0 +1,118 @@
+/* Style de la page de contact */
+
+/* Header */
+
+header h2{
+    text-align: center;
+    -webkit-text-stroke-color: rgb(var(--color-primary));
+    -webkit-text-stroke-width: 2px;
+    font-weight: 900;
+    margin: 2% 0;
+}
+
+
+/* Main */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* formulaire */
+
+form{
+    background-color: rgb(var(--color-primary));
+    border-radius: 30px;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    width: 74vw;
+    align-items: center;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    width: 62.5vw;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input{
+    height: 6.3vh;
+    border-radius: 50px;
+    padding: 0 3%;
+    font-size: var(--typescale-text);
+    font-family: "Archivo", sans-serif;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgb(var(--color-primary-light));
+    font-size: var(--typescale-text);
+    font-family: "Archivo", sans-serif;
+}
+
+form div > div{
+    display: flex;
+    flex-direction: column;
+    height: 54vh;
+    width: 43vw;
+}
+
+form textarea{
+    border-radius: 50px;
+}
+
+form label{
+    font-size: var(--typescale-h4);
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+}
+
+#formNom{
+    width: 25.5vw;
+}
+
+#formMail{
+    width: 33vw;
+}
+
+#formObjet{
+    width: 38.5vw;
+}
+
+#formMess{
+    resize: none;
+    height: 45vh;
+    padding: 2% 3%;
+    font-size: var(--typescale-text);
+    font-family: "Archivo", sans-serif;
+}
+
+#formMess::-webkit-scrollbar{
+    display: none;
+}
+
+#btnSubmit{
+    width: 23.75vw;
+    height: 16.6vh;
+    border-radius: 30px;
+    margin-top: 6%;
+    color: rgb(var(--color-text));
+    font-size: var(--typescale-h2);
+    font-family: "Insanibu", sans-serif;
+    background-color: rgb(var(--color-primary-light));
+    border: solid;
+    border-color: rgb(var(--color-accent));
+    border-width: 4px;
+}
+
+#btnSubmit:hover{
+    background-color: rgb(var(--color-primary-dark));
+}
