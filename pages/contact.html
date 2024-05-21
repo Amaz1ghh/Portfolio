@@ -10,6 +10,7 @@
       <!--lien css et javaScript-->
       <link rel="stylesheet" type="text/css" href="../styles/sytle.css">
       <link rel="stylesheet" type="text/css" href="../styles/pages/contact.css">
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       <script src="../scripts/script.js" defer></script>
 
   </head>
@@ -60,7 +61,7 @@
 
     <!--main-->
     <main>
-      <form>
+      <form name="formulaire">
         <div class="formRow">
           <div>
             <div>
@@ -69,7 +70,7 @@
             </div>
             <div>
               <label for="formMail">Saisissez votre e-mail</label>
-              <input type="text" id="formMail" name="formMail" placeholder="Votre e-mail" required>
+              <input type="email" id="formMail" name="formMail" placeholder="Votre e-mail" required>
             </div>
             <div>
               <label for="formObjet">Saisissez l'objet de votre message</label>
@@ -86,7 +87,7 @@
           <textarea id="formMess" name="formMess" placeholder="Votre message" required></textarea>
         </div>
         <div>
-          <input value="Envoyer" id="btnSubmit">
+          <button type="submit" id="btnSubmit">Envoyer</button>
         </div>
       </form>
     </main>
