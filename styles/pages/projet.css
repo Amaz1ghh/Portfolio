@@ -1,0 +1,27 @@
+/* Style de la page de profil */
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header span{
+    color: rgb(var(--color-primary));
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header svg:hover{
+    border-color: rgb(var(--color-secondary-light));
+}
+
+
+
+/* Main */
+

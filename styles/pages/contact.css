@@ -2,11 +2,8 @@
 
 /* Header */
 
-header h2{
+header h1{
     text-align: center;
-    -webkit-text-stroke-color: rgb(var(--color-primary));
-    -webkit-text-stroke-width: 2px;
-    font-weight: 900;
     margin: 2% 0;
 }
 
