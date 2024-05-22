@@ -5,6 +5,7 @@
 header{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 header span{
@@ -13,12 +14,18 @@ header span{
 
 header div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 71.30vw;
+    margin-top: 3%;
 }
 
-header svg:hover{
-    border-color: rgb(var(--color-secondary-light));
+header svg{
+    margin-right: 5%;
+}
+
+header svg:hover path{
+    stroke: rgb(var(--color-secondary-light));
 }
 
 
