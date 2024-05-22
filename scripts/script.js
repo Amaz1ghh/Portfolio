@@ -1,7 +1,10 @@
-form = document.querySelector("form");
+// const functions = require('./functions.js');
 
 
 // Quand on submit
+
+form = document.querySelector("form");
+
 (function(){
     emailjs.init("_ubXQnsSOBr-aPYPr")
 })();

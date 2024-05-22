@@ -6,6 +6,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3%;
+    line-height: 1.5;
 }
 
 header span{
@@ -14,15 +16,15 @@ header span{
 
 header div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 61vw;
-    margin-top: 3%;
+    width: 75.2vw;
 }
 
 header hr{
     align-self: self-start;
     margin: 60px 100px;
+    align-self: normal;
 }
 
 header svg:hover path{
@@ -30,8 +32,8 @@ header svg:hover path{
 }
 
 header button{
-    width: 26.6vw;
-    height: 13vh;
+    width: 34vw;
+    height: 18.6vh;
     background-color: rgb(var(--color-primary));
     border: solid;
     border-radius: 60px;
@@ -46,6 +48,60 @@ header button:hover{
     background-color: rgb(var(--color-primary-dark));
 }
 
+header button:active, header button:focus{
+    background-color: rgb(var(--color-accent-dark));
+}
+
 
 /* Main */
 
+.estSelect{
+    display: block;
+}
+
+main section{
+    display: none;
+    padding: 0 7%;
+}
+
+section hr{
+    width: 47.2vw;
+    border: solid;
+    border-color: rgb(var(--color-accent));
+    margin: 4.5% auto;
+}
+
+section h1{
+    -webkit-text-stroke-color: rgb(var(--color-primary));
+    -webkit-text-stroke-width: 5px;
+    color: rgb(var(--color-primary-light));
+    text-align: center;
+}
+
+section h3{
+    font-family: "Insanibu", sans-serif;
+    margin-bottom: 2%;
+}
+
+section > div{
+    margin: 4% 0 7% 0;
+}
+
+section p{
+    font-size: var(--typescale-h4);
+    font-family: "Archivo", sans-serif;
+}
+
+section button{
+    background-color: rgb(var(--color-secondary));
+    width: 298px;
+    height: 119px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgb(var(--color-secondary-light));
+    border-width: 4px;
+    color: rgb(var(--color-text));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
