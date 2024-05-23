@@ -33,7 +33,8 @@ header svg:hover path{
 
 header button{
     width: 34vw;
-    height: 18.6vh;
+    min-height: 18.6vh;
+    height: auto;
     background-color: rgb(var(--color-primary));
     border: solid;
     border-radius: 60px;
@@ -42,6 +43,7 @@ header button{
     font-size: var(--typescale-h3);
     font-family: "Insanibu", sans-serif;
     color: rgb(var(--color-text));
+    padding: 2%;
 }
 
 header button:hover{

@@ -9,8 +9,9 @@
       
       <!--lien css et javaScript-->
       <link rel="stylesheet" type="text/css" href="../styles/sytle.css">
-      <link rel="stylesheet" type="text/css" href="../styles/pages/projets.css">
-      <script src="scripts/script.js" defer></script>
+      <link rel="stylesheet" type="text/css" href="../styles/pages/projet.css">
+      <script src="../scripts/functions.js" defer></script>
+      <script src="../scripts/projets.js" defer></script>
 
   </head>
   <!--BODY-->
@@ -18,53 +19,105 @@
 
     <!--navbar-->
     <div class="navBar">
-      <a href="/index" style="text-decoration:none">
-        <div>
-          <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M27 29.8464C27 31.605 27.6321 33.2915 28.7573 34.535C29.8826 35.7785 31.4087 36.4771 33 36.4771C34.5913 36.4771 36.1174 35.7785 37.2426 34.535C38.3678 33.2915 39 31.605 39 29.8464C39 26.3293 37.7357 22.9562 35.4853 20.4691C33.2348 17.9821 30.1826 16.585 27 16.585C23.8174 16.585 20.7651 17.9821 18.5147 20.4691C16.2643 22.9562 15 26.3293 15 29.8464C15 35.1221 16.8964 40.1818 20.2721 43.9123C23.6477 47.6428 28.2261 49.7386 33 49.7386C37.7739 49.7386 42.3522 47.6428 45.7279 43.9123C49.1035 40.1818 51 35.1221 51 29.8464C51 22.8121 48.4714 16.0659 43.9705 11.0919C39.4697 6.11789 33.3652 3.32352 27 3.32352C20.6348 3.32352 14.5303 6.11789 10.0294 11.0919C5.52856 16.0659 3 22.8121 3 29.8464C3 38.6393 6.1607 47.072 11.7868 53.2895C17.4129 59.507 25.0435 63 33 63C40.9565 63 48.5871 59.507 54.2132 53.2895C59.8393 47.072 63 38.6393 63 29.8464C63.011 21.2052 60.4611 12.7978 55.74 5.9095C55.2803 5.16031 54.6867 4.52305 53.9957 4.037C53.3047 3.55095 52.531 3.2264 51.7222 3.08334C50.9134 2.94028 50.0867 2.98174 49.2929 3.20516C48.4992 3.42859 47.7553 3.82925 47.107 4.38247C46.4586 4.93569 45.9197 5.62974 45.5233 6.42187C45.1269 7.214 44.8815 8.08743 44.8021 8.98836C44.7228 9.88929 44.8112 10.7986 45.0619 11.6604C45.3126 12.5221 45.7204 13.318 46.26 13.999" fill="#0000CD"/>
-            <path d="M27 29.8464C27 31.605 27.6321 33.2915 28.7573 34.535C29.8826 35.7785 31.4087 36.4771 33 36.4771C34.5913 36.4771 36.1174 35.7785 37.2426 34.535C38.3678 33.2915 39 31.605 39 29.8464C39 26.3293 37.7357 22.9562 35.4853 20.4691C33.2348 17.9821 30.1826 16.585 27 16.585C23.8174 16.585 20.7651 17.9821 18.5147 20.4691C16.2643 22.9562 15 26.3293 15 29.8464C15 35.1221 16.8964 40.1818 20.2721 43.9123C23.6477 47.6428 28.2261 49.7386 33 49.7386C37.7739 49.7386 42.3522 47.6428 45.7279 43.9123C49.1035 40.1818 51 35.1221 51 29.8464C51 22.8121 48.4714 16.0659 43.9705 11.0919C39.4697 6.11789 33.3652 3.32352 27 3.32352C20.6348 3.32352 14.5303 6.11789 10.0294 11.0919C5.52856 16.0659 3 22.8121 3 29.8464C3 38.6393 6.1607 47.072 11.7868 53.2895C17.4129 59.507 25.0435 63 33 63C40.9565 63 48.5871 59.507 54.2132 53.2895C59.8393 47.072 63 38.6393 63 29.8464C63.011 21.2052 60.4611 12.7978 55.74 5.9095C55.2803 5.16031 54.6867 4.52305 53.9957 4.037C53.3047 3.55095 52.531 3.2264 51.7222 3.08334C50.9134 2.94028 50.0867 2.98174 49.2929 3.20516C48.4992 3.42859 47.7553 3.82925 47.107 4.38247C46.4586 4.93569 45.9197 5.62974 45.5233 6.42187C45.1269 7.214 44.8815 8.08743 44.8021 8.98836C44.7228 9.88929 44.8112 10.7986 45.0619 11.6604C45.3126 12.5221 45.7204 13.318 46.26 13.999" stroke="#1F1F1F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <h3>Portfolio</h3>
-        </div>
-      </a>
-      <ul>
-        <li>
-          <a href="./index.html" style="text-decoration:none">Mon profil</a>
-          <hr>
-        </li>
-        <li id="navBar_select">
-          <a href="./competences.html" style="text-decoration:none">Mes projets</a>
-          <hr>
-        </li>
-        <li>
-          <a href="./contact.html" style="text-decoration:none">Me contacter</a>
-          <hr>
-        </li>
-      </ul>
-      <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none" target="_blank" download="AIT-OUAZZOU_YAN_CV.pdf">
-        <div class="monCV">
-          <h3>Mon CV</h3>
-          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M43 29.6668V38.5557C43 39.7344 42.5317 40.8649 41.6983 41.6984C40.8648 42.5319 39.7343 43.0001 38.5556 43.0001H7.44444C6.2657 43.0001 5.13524 42.5319 4.30175 41.6984C3.46825 40.8649 3 39.7344 3 38.5557V29.6668" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11.8889 18.5555L23 29.6666L34.1111 18.5555" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M23 29.6667V3" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-      </a>
+        <a href="/index" style="text-decoration:none">
+            <div>
+                <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27 29.8464C27 31.605 27.6321 33.2915 28.7573 34.535C29.8826 35.7785 31.4087 36.4771 33 36.4771C34.5913 36.4771 36.1174 35.7785 37.2426 34.535C38.3678 33.2915 39 31.605 39 29.8464C39 26.3293 37.7357 22.9562 35.4853 20.4691C33.2348 17.9821 30.1826 16.585 27 16.585C23.8174 16.585 20.7651 17.9821 18.5147 20.4691C16.2643 22.9562 15 26.3293 15 29.8464C15 35.1221 16.8964 40.1818 20.2721 43.9123C23.6477 47.6428 28.2261 49.7386 33 49.7386C37.7739 49.7386 42.3522 47.6428 45.7279 43.9123C49.1035 40.1818 51 35.1221 51 29.8464C51 22.8121 48.4714 16.0659 43.9705 11.0919C39.4697 6.11789 33.3652 3.32352 27 3.32352C20.6348 3.32352 14.5303 6.11789 10.0294 11.0919C5.52856 16.0659 3 22.8121 3 29.8464C3 38.6393 6.1607 47.072 11.7868 53.2895C17.4129 59.507 25.0435 63 33 63C40.9565 63 48.5871 59.507 54.2132 53.2895C59.8393 47.072 63 38.6393 63 29.8464C63.011 21.2052 60.4611 12.7978 55.74 5.9095C55.2803 5.16031 54.6867 4.52305 53.9957 4.037C53.3047 3.55095 52.531 3.2264 51.7222 3.08334C50.9134 2.94028 50.0867 2.98174 49.2929 3.20516C48.4992 3.42859 47.7553 3.82925 47.107 4.38247C46.4586 4.93569 45.9197 5.62974 45.5233 6.42187C45.1269 7.214 44.8815 8.08743 44.8021 8.98836C44.7228 9.88929 44.8112 10.7986 45.0619 11.6604C45.3126 12.5221 45.7204 13.318 46.26 13.999" fill="#0000CD"/>
+                    <path d="M27 29.8464C27 31.605 27.6321 33.2915 28.7573 34.535C29.8826 35.7785 31.4087 36.4771 33 36.4771C34.5913 36.4771 36.1174 35.7785 37.2426 34.535C38.3678 33.2915 39 31.605 39 29.8464C39 26.3293 37.7357 22.9562 35.4853 20.4691C33.2348 17.9821 30.1826 16.585 27 16.585C23.8174 16.585 20.7651 17.9821 18.5147 20.4691C16.2643 22.9562 15 26.3293 15 29.8464C15 35.1221 16.8964 40.1818 20.2721 43.9123C23.6477 47.6428 28.2261 49.7386 33 49.7386C37.7739 49.7386 42.3522 47.6428 45.7279 43.9123C49.1035 40.1818 51 35.1221 51 29.8464C51 22.8121 48.4714 16.0659 43.9705 11.0919C39.4697 6.11789 33.3652 3.32352 27 3.32352C20.6348 3.32352 14.5303 6.11789 10.0294 11.0919C5.52856 16.0659 3 22.8121 3 29.8464C3 38.6393 6.1607 47.072 11.7868 53.2895C17.4129 59.507 25.0435 63 33 63C40.9565 63 48.5871 59.507 54.2132 53.2895C59.8393 47.072 63 38.6393 63 29.8464C63.011 21.2052 60.4611 12.7978 55.74 5.9095C55.2803 5.16031 54.6867 4.52305 53.9957 4.037C53.3047 3.55095 52.531 3.2264 51.7222 3.08334C50.9134 2.94028 50.0867 2.98174 49.2929 3.20516C48.4992 3.42859 47.7553 3.82925 47.107 4.38247C46.4586 4.93569 45.9197 5.62974 45.5233 6.42187C45.1269 7.214 44.8815 8.08743 44.8021 8.98836C44.7228 9.88929 44.8112 10.7986 45.0619 11.6604C45.3126 12.5221 45.7204 13.318 46.26 13.999" stroke="#1F1F1F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Portfolio</h3>
+            </div>
+        </a>
+        <ul>
+            <li>
+                <a href="./index.html" style="text-decoration:none">Mon profil</a>
+                <hr>
+            </li>
+            <li id="navBar_select">
+                <a href="./competences.html" style="text-decoration:none">Mes projets</a>
+                <hr>
+            </li>
+            <li>
+                <a href="./contact.html" style="text-decoration:none">Me contacter</a>
+                <hr>
+            </li>
+        </ul>
+        <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none"  download="AIT-OUAZZOU_YAN_CV.pdf" target="_blank">
+            <div class="monCV">
+                <h3>Mon CV</h3>
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43 29.6668V38.5557C43 39.7344 42.5317 40.8649 41.6983 41.6984C40.8648 42.5319 39.7343 43.0001 38.5556 43.0001H7.44444C6.2657 43.0001 5.13524 42.5319 4.30175 41.6984C3.46825 40.8649 3 39.7344 3 38.5557V29.6668" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.8889 18.5555L23 29.6666L34.1111 18.5555" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23 29.6667V3" stroke="#F5F5F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </a>
     </div>
 
     <!--header-->
 
     <header>
+        <div>
+            <a href="./competences.html">
+                <svg width="116" height="86" viewBox="0 0 116 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.002 78L8.00205 43L28.002 8" stroke="white" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M108.002 43L8.00204 43" stroke="white" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <h2>Identifier les <span>besoins métiers</span><br>des <span>clients</span> et des <span>utilisateurs</span></h2>
+        </div>
 
+        <hr>
+
+        <div class="triggers">
+          <button value="tabas-kho">Tabas-kho</button>
+        </div>
     </header>
-
-    <hr>
 
     <!--main-->
 
     <main>
-
+        <section value="tabas-kho" class="tabs">
+            <hr>
+            <h1>Tabas-kho</h1>
+            <div>
+                <h3><span class="textEnViolet">Description</span> du projet</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+                <button onclick="openInNewTab('https://github.com/Amaz1ghh')" type="button">Code source
+                    <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37 5L45 20L37 35" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 20H45" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <h3><span>étapes</span> du projet</h3>
+                <ol>
+                    <li>blabla</li>
+                    <li>blabla</li>
+                    <li>blabla</li>
+                    <li>blabla</li>
+                    <li>blabla</li>
+                    <li>blabla</li>
+                </ol>
+            </div>
+            <div>
+                <h3><span class="textEnNoir">outils</span> et <span class="textEnNoir">langages</span> utilisés</h3>
+                <ul>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                </ul>
+            </div>
+            <div>
+                <img src="" title="" alt="">
+                <img src="" title="" alt="">
+            </div>
+        </section>
     </main>
 
     <hr>
