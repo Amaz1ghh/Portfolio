@@ -10,8 +10,8 @@
       <!--lien css et javaScript-->
       <link rel="stylesheet" type="text/css" href="../styles/sytle.css">
       <link rel="stylesheet" type="text/css" href="../styles/pages/projet.css">
-      <script src="../scripts/script.js" defer></script>
       <script src="../scripts/functions.js" defer></script>
+      <script src="../scripts/projets.js" defer></script>
 
   </head>
   <!--BODY-->
@@ -42,7 +42,7 @@
                 <hr>
             </li>
         </ul>
-        <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none"  download="AIT-OUAZZOU_YAN_CV.pdf">
+        <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none"  download="AIT-OUAZZOU_YAN_CV.pdf" target="_blank">
             <div class="monCV">
                 <h3>Mon CV</h3>
                 <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,18 +69,18 @@
 
         <hr>
 
-        <div>
-          <button id="BnDemineur">Jeu de démineur</button>
-          <button id="BnSudoku">Jeu de sudoku</button>
+        <div class="triggers">
+          <button value="demineur">Jeu de démineur</button>
+          <button value="sudoku">Jeu de sudoku</button>
         </div>
     </header>
 
     <!--main-->
 
     <main>
-        <section id="corpsDemineur" class="estSelect">
+        <section value="demineur" class="tabs">
             <hr>
-            <h1>Démineur</h1>
+            <h1>Sudoku</h1>
             <div>
                 <h3><span class="textEnViolet">Description</span> du projet</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
@@ -106,12 +106,12 @@
             <div>
                 <h3><span class="textEnNoir">outils</span> et <span class="textEnNoir">langages</span> utilisés</h3>
                 <ul>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
+                    <li><img src="" title="" alt="">blabla</li>
                 </ul>
             </div>
             <div>
@@ -120,42 +120,47 @@
             </div>
         </section>
 
-        <section id="corpsSudoku">
-            <hr>
-            <h1>Sudoku</h1>
-            <h3><span class="textEnViolet">Description</span> du projet</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-               laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-            <div>
-                <button>Code source</button>
-                <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37 5L45 20L37 35" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 20H45" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <h3><span>étapes</span> du projet</h3>
-            <ol>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-            </ol>
-            <h3><span class="textEnNoir">outils</span> et <span class="textEnNoir">langages</span> utilisés</h3>
-            <ul>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-                <li>blabla</li>
-            </ul>
-            <div>
-                <img src="" title="" alt="">
-                <img src="" title="" alt="">
-            </div>
-        </section>
+        <section class="tabs" value="sudoku">
+          <hr>
+          <h1>Démineur</h1>
+          <div>
+              <h3><span class="textEnViolet">Description</span> du projet</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+              <button onclick="openInNewTab('https://github.com/Amaz1ghh')" type="button">Code source
+                  <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M37 5L45 20L37 35" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M5 20H45" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </button>
+          </div>
+          <div>
+              <h3><span>étapes</span> du projet</h3>
+              <ol>
+                  <li>blabla</li>
+                  <li>blabla</li>
+                  <li>blabla</li>
+                  <li>blabla</li>
+                  <li>blabla</li>
+                  <li>blabla</li>
+              </ol>
+          </div>
+          <div>
+              <h3><span class="textEnNoir">outils</span> et <span class="textEnNoir">langages</span> utilisés</h3>
+              <ul>
+                  <li><img src="" title="" alt="">blabla</li>
+                  <li><img src="" title="" alt="">blabla</li>
+                  <li><img src="" title="" alt="">blabla</li>
+                  <li><img src="" title="" alt="">blabla</li>
+                  <li><img src="" title="" alt="">blabla</li>
+                  <li><img src="" title="" alt="">blabla</li>
+              </ul>
+          </div>
+          <div>
+              <img src="" title="" alt="">
+              <img src="" title="" alt="">
+          </div>
+      </section>
     </main>
 
     <hr>

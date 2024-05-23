@@ -84,7 +84,7 @@ section h3{
 }
 
 section > div{
-    margin: 4% 0 7% 0;
+    margin: 6% 0 0 0;
 }
 
 section p{
@@ -104,4 +104,27 @@ section button{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 4%;
+}
+
+section button:hover{
+    background-color: rgb(var(--color-secondary-dark));
+}
+
+section ol{
+    margin-left: 5%;
+    line-height: 2.5;
+}
+
+section ul{
+    margin-left: 3%;
+    line-height: 2.5;
+}
+
+.textEnNoir{
+    color: rgb(var(--color-secondary-light));
+}
+
+.textEnViolet{
+    color: rgb(var(--color-accent-light));
 }

@@ -13,6 +13,7 @@
       <link rel="stylesheet" type="text/css" href="../styles/sytle.css">
       <link rel="stylesheet" type="text/css" href="../styles/pages/profil.css">
       <script src="scripts/script.js" defer></script>
+      <script src="../scripts/functions.js" defer></script>
 
   </head>
   <!--BODY-->
@@ -43,7 +44,7 @@
           <hr>
         </li>
       </ul>
-      <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none"  download="AIT-OUAZZOU_YAN_CV.pdf">
+      <a href="../public/images/AIT-OUAZZOU_YAN_CV.pdf" style="text-decoration:none" target="_blank" download="AIT-OUAZZOU_YAN_CV.pdf">
         <div class="monCV">
           <h3>Mon CV</h3>
           <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,10 +109,10 @@
               <li><strong>Parcours A</strong> (réalisation d'applications - conception, développement, validation)</li>
             </ul>
             <div>
-              <button onclick="window.location.href = 'https://iut-lannion.univ-rennes.fr';" type="button" name="voir_site_IUT">
+              <button onclick="openInNewTab('https://iut-lannion.univ-rennes.fr');" type="button" name="voir_site_IUT">
                 Visiter le site
               </button>
-              <button onclick="window.location.href = 'https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf';" type="button" name="voir_prog_IUT">
+              <button onclick="openInNewTab('https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf');" type="button" name="voir_prog_IUT">
                 Voir le programme
               </button>
             </div>
@@ -127,10 +128,10 @@
               <li><strong>Physique-Chimie</strong> <span>(1ère)</span></li>
             </ul>
             <div>
-              <button onclick="window.location.href = 'https://www.lycee-rene-cassin-montfort-sur-meu.ac-rennes.fr';" type="button" name="voir_site_Lycee">
+              <button onclick="openInNewTab('https://www.lycee-rene-cassin-montfort-sur-meu.ac-rennes.fr')" type="button" name="voir_site_Lycee">
                 Visiter le site
               </button>
-              <button onclick="window.location.href = 'https://www.education.gouv.fr/les-programmes-du-lycee-general-et-technologique-9812';" type="button" name="voir_prog_Lycee">
+              <button onclick="openInNewTab('https://www.education.gouv.fr/les-programmes-du-lycee-general-et-technologique-9812');" type="button" name="voir_prog_Lycee">
                 Voir le programme
               </button>
             </div>
