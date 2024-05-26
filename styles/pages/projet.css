@@ -213,15 +213,6 @@ ol li::marker {
     height: 55vh;
 }
 
-.logoChangDir{
-    display: flex;
-    flex-direction: row;
-}
-
-.logoChangDir div{
-    width: 30vw;
-}
-
 /* Projet 4 */
 
 .img_bdd{
@@ -236,3 +227,26 @@ ol li::marker {
 }
 
 /* Projet 5 */
+
+.img_tabaskho{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_tabaskho img{
+    width: 40vw;
+    height: 90vh;
+}
+
+
+/* Pour plusieurs outils / langages */
+
+.logoChangDir{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoChangDir div{
+    width: 30vw;
+}
