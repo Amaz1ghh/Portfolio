@@ -82,8 +82,11 @@
             <h1>Génération automatisée de documentations</h1>
             <div>
                 <h3><span class="textEnViolet">Description</span> du projet</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+                <p>Programmation de plusieurs scripts (php et Bash) qui permettront la génération de documentations techniques et
+                  utilisateur (en pdf) à partir de fichiers sources (respectivement des fichiers C et un fichier markdown).<br>
+                  Le script Bash permettra d'automatiser le processus de création des documentations (il suffira de lancer le script
+                  Bash avec les scripts php et les fichiers sources dans le même dossier).<br>
+                  Docker sera également utilisé dans les scripts afin que le processus puisse être lancé depuis n'importe quel appareil.</p>
                 <button onclick="openInNewTab('https://github.com/Amaz1ghh/Doc-barbu')" type="button">Code source
                     <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M37 5L45 20L37 35" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,30 +94,32 @@
                     </svg>
                 </button>
             </div>
-            <div>
-              <img src="" title="" alt="">
-              <img src="" title="" alt="">
+            <div class="img_genDoc">
+              <img src="../public/images/doc_user.png" title="Documentation technique" alt="Documentation technique">
+              <img src="../public/images/doc_tech_corps.png" title="Documentation utilisateur" alt="Documentation utilisateur">
             </div>
             <div>
                 <h3><span>étapes</span> du projet</h3>
                 <ol>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
-                    <li>blabla</li>
+                    <li>Création des fichiers sources à partir desquels les documentations seront générées</li>
+                    <li>Création des modèles des documentations qui seront générées automatiquement par la suite</li>
+                    <li>Création de 2 scripts php qui récupère respectivement un fichier markdown et 1 ou plusieurs fichiers C, puis génère les documentations respectives</li>
+                    <li>Programmation d'un script Bash qui automatise l'exécution de tous les fichiers php et place les documentations générées dans un dossier compressé dédié</li>
                 </ol>
             </div>
             <div>
                 <h3><span class="textEnNoir">outils</span> et <span class="textEnNoir">langages</span> utilisés</h3>
-                <ul>
-                    <li><img src="" title="" alt="">blabla</li>
-                    <li><img src="" title="" alt="">blabla</li>
-                    <li><img src="" title="" alt="">blabla</li>
-                    <li><img src="" title="" alt="">blabla</li>
-                    <li><img src="" title="" alt="">blabla</li>
-                    <li><img src="" title="" alt="">blabla</li>
+                <ul class="logoChangDir">
+                  <div>
+                    <li><img src="../public/images/logo_c.png" title="Langage C" alt="Langage C">Langage C</li>
+                    <li><img src="../public/images/logo_html.png" title="HTML" alt="HTML">HTML</li>
+                    <li><img src="../public/images/logo_css.png" title="CSS" alt="CSS">CSS</li>
+                  </div>
+                  <div>
+                    <li><img src="../public/images/logo_php.png" title="PHP" alt="PHP">PHP</li>
+                    <li><img src="../public/images/logo_bash.png" title="Bash" alt="Bash">Bash</li>
+                    <li><img src="../public/images/logo_docker.png" title="Docker" alt="Docker">Docker</li>
+                  </div>
                 </ul>
             </div>
         </section>
