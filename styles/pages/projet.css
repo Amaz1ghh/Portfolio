@@ -224,4 +224,15 @@ ol li::marker {
 
 /* Projet 4 */
 
+.img_bdd{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_bdd img{
+    width: 40vw;
+    height: 55vh;
+}
+
 /* Projet 5 */
