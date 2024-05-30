@@ -239,6 +239,18 @@ ol li::marker {
     height: 90vh;
 }
 
+/* Projet 6 */
+
+.img_team_buil{
+    display: flex;
+    align-items: center;
+}
+
+.img_team_buil img{
+    width: 50vw;
+    height: 90vh;
+    margin-right: 5%;
+}
 
 /* Pour plusieurs outils / langages */
 
