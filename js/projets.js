@@ -1,4 +1,3 @@
-
 let buttons = document.querySelectorAll('.triggers button');
 let tabs = Array.from(document.querySelectorAll('.tabs'))
 
