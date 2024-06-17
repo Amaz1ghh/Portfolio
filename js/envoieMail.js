@@ -1,6 +1,6 @@
 // Quand on submit
 
-form = document.querySelector("form");
+let form = document.querySelector("form");
 
 (function(){
     emailjs.init("_ubXQnsSOBr-aPYPr")
