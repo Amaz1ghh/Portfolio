@@ -16,7 +16,12 @@
       <link rel="stylesheet" type="text/css" href="./styles/sytle.css">
       <link rel="stylesheet" type="text/css" href="./styles/pages/profil.css">
       <script type="module" src="js/script.js" defer></script>
-      <script type="module" src="./js/functions.js" defer></script>
+      <!-- <script type="module" src="./js/functions.js" defer></script> -->
+      <script defer>
+        function openInNewTab(url) {
+          window.open(url, '_blank', 'noopener,noreferrer')
+        }
+      </script>
 
   </head>
   <!--BODY-->
@@ -90,7 +95,7 @@
         <div>
           <p>Je suis actuellement à la recherche d'une <span>alternance</span> pour ma 2e et 3e année de BUT
             en tant que développeur <span>logiciel</span>. N'hésitez pas à me <span>contacter</span> si mon profil vous intéresse !</p>
-          <button onclick="window.location.href = 'competences.html';" type="button" name="voir_projets">
+          <button onclick="window.location.href = 'pages/competences.html';" type="button" name="voir_projets">
             Mes projets
             <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M36.9999 5L44.9999 20L36.9999 35" stroke="#AE37FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -176,7 +181,7 @@
       <div>
         <h4>Navigation</h4>
         <div>
-          <a href="./pages/index.html" style="text-decoration:none" class="mini_texte">MON PROFIL</a>
+          <a href="./index.html" style="text-decoration:none" class="mini_texte">MON PROFIL</a>
         </div>
         <div>
           <a href="./pages/competences.html" style="text-decoration:none" class="mini_texte">MES PROJETS</a>
