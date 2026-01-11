@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Yan Ait ouazzou</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script><style type="text/css" id="operaUserStyle"></style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html"><div class="logo">Yan A.</div></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="contact.html" class="btn-nav">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Mes Réalisations</h1>
+            <p>Découvrez mes projets, filtrez-les par compétence et explorez les détails de chacun.</p>
+        </div>
+
+        <!-- Filtres de compétences -->
+        <div id="filters" class="filters-container">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="realiser">Réaliser</button>
+            <button class="filter-btn" data-filter="optimiser">Optimiser</button>
+            <button class="filter-btn" data-filter="administrer">Administrer</button>
+            <button class="filter-btn" data-filter="gerer">Gérer</button>
+            <button class="filter-btn" data-filter="conduire">Conduire</button>
+            <button class="filter-btn" data-filter="collaborer">Collaborer</button>
+        </div>
+        
+        <div id="filters-skills" class="filters-container">
+            <button class="filter-btn active" data-filter="all">Toutes les compétences</button>
+            <button class="filter-btn" data-filter="data-ia">Data & IA</button>
+            <button class="filter-btn" data-filter="dev-web">Développement Web</button>
+            <button class="filter-btn" data-filter="dev-logiciel">Développement Logiciel</button>
+        </div>
+
+        <!-- Grille des projets -->
+        <div id="projects-grid" class="container grid-3">
+            <!-- Projet Recommandations Musique -->
+            <div class="project-card" data-competences="optimiser gerer conduire collaborer" data-skills="data-ia" data-modal-target="modal-rec_musique">
+                <img src="" alt="Projet Recommandations Musique">
+                <div class="card-title">Recommandations Musique</div>
+            </div>
+
+            <!-- Projet Stage Tertio Engineering -->
+            <div class="project-card" data-competences="conduire administrer gerer" data-skills="dev-web data-ia" data-modal-target="modal-tertio_eng">
+                <img src="./images/tertio_accueil.png" alt="Projet Stage Tertio">
+                <div class="card-title">Stage Tertio Engineering</div>
+            </div>
+
+            <!-- Projet PACT -->
+            <div class="project-card" data-competences="administrer gerer conduire collaborer" data-skills="dev-web" data-modal-target="modal-pact">
+                <img src="./images/pact_detail_offre.png" alt="Projet PACT">
+                <div class="card-title">Projet PACT</div>
+            </div>
+
+            <!-- Projet Parcours du Cavalier -->
+            <div class="project-card" data-competences="optimiser collaborer" data-skills="dev-logiciel" data-modal-target="modal-parcours_cavalier">
+                <img src="images/caval_en_cours.png" alt="Projet Parcours du Cavalier">
+                <div class="card-title">Parcours du Cavalier</div>
+            </div>
+
+            <!-- Projet Jeu et Résolveur de Sudoku -->
+            <div class="project-card" data-competences="realiser optimiser" data-skills="dev-logiciel" data-modal-target="modal-jeu_resolveur_sudoku">
+                <img src="images/resolv_debut.png" alt="Jeu et Résolveur de Sudoku">
+                <div class="card-title">Jeu et Résolveur de Sudoku</div>
+            </div>
+            
+            <!-- Projet Projet Démineur -->
+            <div class="project-card" data-competences="realiser collaborer" data-skills="dev-logiciel" data-modal-target="modal-demineur">
+                <img src="images/demineur_en_cours.png" alt="Projet Démineur">
+                <div class="card-title">Jeu du Démineur</div>
+            </div>
+
+            <!-- Projet Génération Automatisée de Documentations -->
+            <div class="project-card" data-competences="administrer collaborer" data-skills="dev-web dev-logiciel" data-modal-target="modal-gener_doc">
+                <img src="images/doc_tech_1.png" alt="Projet Génération Automatisée de Documentations">
+                <div class="card-title">Génération Automatisée de Documentations</div>
+            </div>
+        </div>
+
+        <!-- Modals pour les détails des projets -->
+        <!-- Modal Projet Recommandations Musique -->
+        <div id="modal-rec_musique" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Recommandations Musique</h2>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="" alt="Analyses statistiques"></div>
+                            <div class="carousel-slide"><img src="" alt="BDD"></div>
+                            <div class="carousel-slide"><img src="" alt="Recommendation finale"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Data & IA</span><span class="tag">Python</span><span class="tag">Matplotlib</span><span class="tag">MySQL</span><span class="tag">Optimiser</span><span class="tag">Gérer</span><span class="tag">Conduire</span><span class="tag">Collaborer</span>
+                        </div>
+                        <p><strong>Développement de systèmes de recommendation de musiques à partir de données provenant de plusieurs sources. Le projet comprend :</strong><br><br>
+                            Nettoyage des CSV.<br><br>
+                            Analyses statistiques des données issues des CSV et d'un questionnaire réalisé au préalable.<br><br>
+                            Réalisation de la base de données.<br><br>
+                            Réalisation de différents systèmes de recommandation tels que GRU, TF-IDF, GraphSAGE et des systèmes de filtrage collaboratif, puis de fonctions capables d'analyser leurs performances.</p>
+                        <br>
+                        <a href="https://github.com/mariuschartier/Code_Sae" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Stage Tertio Engineering -->
+        <div id="modal-tertio_eng" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Stage Tertio Engineering</h2>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="./images/tertio_accueil.png" alt="Accueil Tertio"></div>
+                            <div class="carousel-slide"><img src="./images/tertio_acheteur.png" alt="Acheteur Tertio"></div>
+                            <div class="carousel-slide"><img src="./images/tertio_crea_demande.png" alt="Création d'une demande"></div>
+                            <div class="carousel-slide"><img src="./images/tertio_vendeur.png" alt="Vendeur Tertio"></div>
+                            <div class="carousel-slide"><img src="./images/tertio_crea_offre.png" alt="Création d'une offre"></div>
+                            <div class="carousel-slide"><img src="./images/tertio_preferences.png" alt="Préférences de l'utilisateur"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Développement Web</span><span class="tag">Data & IA</span><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">MySQL</span><span class="tag">NAS</span><span class="tag">Conduire</span><span class="tag">Administrer</span><span class="tag">Gérer</span>
+                        </div>
+                        <p><strong>Configuration d'un NAS & Développement d'un POC (Proof of Concept) d'un site d'offres et de demandes de mobiliers selon des besoins métiers contenant :</strong><br><br>
+                            Un système de connexion / inscription.<br><br>
+                            Une partie "Acheteur" permettant de faire des demandes de mobilier et de consulter les offres reçues. Les offres reçues possèdent un score selon l'adéquation avec la demande à laquelle elle répond.<br><br>
+                            Une partie "Vendeur" permettant de consulter les demandes reçues selon des préférences entrées, les offres envoyées et les offres ayant été refusées.<br><br>
+                            Une partie "Profil" permettant de changer ses informations personnelles ainsi que ses préferences, afin de personnaliser les demandes recues.<br><br>
+                            La recherche d'offres et de demandes peut être filtrée et triée. Les demandes peuvent également être "marquées en lu".
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal PACT -->
+        <div id="modal-pact" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Projet PACT</h2>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="./images/pact_avis_pro.png" alt="Avis d'un profesionnel"></div>
+                            <div class="carousel-slide"><img src="./images/pact_avis_pro_2.png" alt="Avis d'un profesionnel 2"></div>
+                            <div class="carousel-slide"><img src="./images/pact_compte_pro.png" alt="Page de compte profesionnel"></div>
+                            <div class="carousel-slide"><img src="./images/pact_detail_offre.png" alt="Page détail d'une offre"></div>
+                            <div class="carousel-slide"><img src="./images/pact_page_recherche.png" alt="Page de recherche"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Développement Web</span><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">MySQL</span><span class="tag">Administrer</span><span class="tag">Gérer</span><span class="tag">Conduire</span><span class="tag">Collaborer</span>
+                        </div>
+                        <p><strong>La PACT est un projet réaliser en équipe de 7 sous la méthodologie SCRUM visant à développer un site de manière AGILE qui répondra au besoin d'un client (fictif). Le site est une vitrine pour les activités en tout genre et comprend :</strong><br><br>
+                            Un système de connexion / inscription.<br><br>
+                            Une système de connexion / inscription.<br><br>
+                            </p>
+                        <br>
+                        <a href="https://github.com/mini-bzh/PACT" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Parcours du Cavalier -->
+        <div id="modal-parcours_cavalier" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Parcours du Cavalier</h2>
+                 <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="images/caval_debut.png" alt="Début du parcours"></div>
+                            <div class="carousel-slide"><img src="images/caval_en_cours.png" alt="Parcours en cours"></div>
+                            <div class="carousel-slide"><img src="images/caval_fin.png" alt="Fin du parcours"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"><button class="carousel-dot active"></button><button class="carousel-dot"></button><button class="carousel-dot"></button></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Développement Logiciel</span><span class="tag">Python</span><span class="tag">Pygame</span><span class="tag">Optimiser</span><span class="tag">Collaborer</span>
+                        </div>
+                        <p><strong>Cet algorithme résoud le problème du parcous du cavalier :</strong><br><br>
+                            Sur un plateau d'échec un cavalier doit parcourir tout le plateau sans repasser par la même case (parcours hamiltonien).<br><br>
+                            Le code source présente un parcours heuristique et non-heuristique. Chacun ayant la possiblité de trouver soit un soit tous les chemins.<br><br>
+                            Le parcours du cavalier est representé avec une interface graphique par un cavalier parcourant un (et un seul) chemin.</p>
+                        <br>
+                        <a href="https://github.com/Amaz1ghh/Parcours-du-cavalier" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Jeu et Résolveur de Sudoku -->
+        <div id="modal-jeu_resolveur_sudoku" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Jeu et Résolveur de Sudoku</h2>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="images/sudoku_debut.png" alt="Début de la partie"></div>
+                            <div class="carousel-slide"><img src="images/sudoku_gagne.png" alt="Partie en cours"></div>
+                            <div class="carousel-slide"><img src="images/resolv_debut.png" alt="Début du résolveur"></div>
+                            <div class="carousel-slide"><img src="images/resolv_fin.png" alt="Fin du résolveur"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"><button class="carousel-dot active"></button><button class="carousel-dot"></button><button class="carousel-dot"></button><button class="carousel-dot"></button></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Développement Logiciel</span><span class="tag">C</span><span class="tag">Réaliser</span><span class="tag">Optimiser</span>
+                        </div>
+                        <p><strong>Ce projet de sudoku ce décompose en 2 partie :</strong><br><br></p>
+                        <p><strong>- Jeu de sudoku</strong><br><br>
+                        Le but de ce projet était de programmer un jeu de sudoku en langage C (sur un terminal). Le programme doit respecter un cahier des charges réalisé au préalable.</p>
+                        <br>
+                        <a href="https://github.com/Amaz1ghh/Sudoku" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                        <br>
+                        <p><strong>- Résolveur de sudoku</strong><br><br>
+                        Ce programme demande à l'utilisateur de lui donner une grille de sudoku, puis complète cette grille avec l'implémentation de véritables méthodes de résolution de sudoku et la méthode de backtracking.<br>
+                        Le programme à été optimiser pour compléter rapidemment cette grille.</p>
+                        <br>
+                        <a href="https://github.com/Amaz1ghh/Resolveur-de-sudoku" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Démineur -->
+        <div id="modal-demineur" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Jeu du Démineur</h2>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="images/demineur_debut.png" alt="Début de la partie"></div>
+                            <div class="carousel-slide"><img src="images/demineur_en_cours.png" alt="Partie en cours"></div>
+                            <div class="carousel-slide"><img src="images/demineur_perdue.png" alt="Partie perdue"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Développement Logiciel</span><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">Réaliser</span><span class="tag">Collaborer</span>
+                        </div>
+                        <p>L'objectif de ce projet était de créer un jeu de démineur en équipe de 3. Ce jeu à été réalisé en python et s'accompagne d'une interface graphique faite avec la bibliothèque Tkinter.</p>
+                        <br>
+                        <a href="https://github.com/Amaz1ghh/Demineur" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Génération Automatisée de Documentations -->
+        <div id="modal-gener_doc" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">×</span>
+                <h2>Génération Automatisée de Documentations</h2>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <div class="carousel-slides">
+                            <div class="carousel-slide active"><img src="images/doc_tech_1.png" alt="Documentation technique partie 1"></div>
+                            <div class="carousel-slide"><img src="images/doc_tech_2.png" alt="Documentation technique partie 2"></div>
+                            <div class="carousel-slide"><img src="images/doc_user_1.png" alt="Documentation utilisateur partie 1"></div>
+                            <div class="carousel-slide"><img src="images/doc_user_2.png" alt="Documentation utilisateur partie 2"></div>
+                        </div>
+                        <button class="carousel-control prev">&lt;</button>
+                        <button class="carousel-control next">&gt;</button>
+                        <div class="carousel-dots"></div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tags">
+                            <span class="tag">Développement Web</span><span class="tag">Développement Logiciel</span><span class="tag">PHP</span><span class="tag">Docker</span><span class="tag">Bash</span><span class="tag">Administrer</span><span class="tag">Collaborer</span>
+                        </div>
+                        <p><strong>Ce projet permet de créer automatiquement des documentations utilisateurs à partir de fichiers C utilisant des commentraires spéciaux (à l'instar de doxygen) et des documentations techniques à partir de fichiers Markdown :</strong><br><br>
+                            Un programme analyse les fichiers sources C à la recherche de commentaires spéciaux (par exemple, @brief) afin de créer une documentation technique. Cette documentation est configurée via un fichier de configuration et des options en ligne de commande.<br><br>
+                            Un autre programme convertit un fichier DOC_UTILISATEUR.md distinct en un manuel utilisateur.<br><br>
+                            Un script bash tente d'automatiser ce processus dans Docker, en gérant la copie et l'exécution des fichiers.<br><br>
+                            Le style est géré par CSS dans le répertoire themes, et la structure HTML provient de modèles situés dans le répertoire data.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Amaz1ghh/Doc-barbu" class="link-arrow">Voir le code sur GitHub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/yan-ait-ouazzou-357973300/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="linkedin" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="https://github.com/Amaz1ghh?tab=repositories"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="github" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+            <a href="mailto:yan.aitouazzou0@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></a>
+        </div>
+        <p>© 2026 Yan Ait ouazzou. Portfolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body></html>
