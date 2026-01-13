@@ -1,12 +1,62 @@
 // Initialisation des icônes Lucide
 lucide.createIcons();
 
-// Note : La classe "active" est mise manuellement dans le HTML de chaque page 
-// pour simplifier le code sans serveur, mais voici un script qui peut le faire auto
-// si tu veux ne pas toucher au HTML à chaque fois.
+// --- THEME TOGGLE FUNCTIONALITY ---
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to 'dark'
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+
+    // Apply saved theme immediately
+    if (currentTheme === 'light') {
+        html.setAttribute('data-theme', 'light');
+    }
+
+    // Update icon based on theme
+    function updateIcon() {
+        if (!themeToggle) return;
+
+        const icon = themeToggle.querySelector('i');
+        if (!icon) return;
+
+        const theme = html.getAttribute('data-theme');
+
+        if (theme === 'light') {
+            icon.setAttribute('data-lucide', 'moon');
+        } else {
+            icon.setAttribute('data-lucide', 'sun');
+        }
+        lucide.createIcons();
+    }
+
+    // Set initial icon
+    updateIcon();
+
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            if (newTheme === 'light') {
+                html.setAttribute('data-theme', 'light');
+            } else {
+                html.removeAttribute('data-theme');
+            }
+
+            // Save preference
+            localStorage.setItem('theme', newTheme);
+
+            // Update icon
+            updateIcon();
+        });
+    }
+});
 
 const navLinks = document.querySelectorAll('.nav-links a');
-const currentPath = window.location.pathname.split("/").pop(); 
+const currentPath = window.location.pathname.split("/").pop();
 
 // Si le fichier est vide (racine), c'est index.html
 const activePage = currentPath === "" ? "index.html" : currentPath;
@@ -15,7 +65,7 @@ navLinks.forEach(link => {
     // Retire la classe active par défaut
     link.classList.remove('active');
     // Si le href du lien correspond à la page active
-    if(link.getAttribute('href') === activePage) {
+    if (link.getAttribute('href') === activePage) {
         link.classList.add('active');
     }
 });
@@ -59,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectCards.forEach(card => {
             const competences = card.dataset.competences || '';
             const skills = card.dataset.skills || '';
-            
+
             const competenceMatch = currentCompetenceFilter === 'all' || competences.includes(currentCompetenceFilter);
             const skillMatch = currentSkillFilter === 'all' || skills.includes(currentSkillFilter);
 
@@ -114,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dot.addEventListener('click', () => showSlide(i));
             dotsContainer.appendChild(dot);
         });
-        
+
         const dots = dotsContainer.querySelectorAll('.carousel-dot');
 
         const showSlide = (index) => {
@@ -136,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newIndex = (currentIndex + 1) % slides.length;
             showSlide(newIndex);
         });
-        
+
         carousel.dataset.initialized = true;
         showSlide(0); // Afficher la première slide par défaut
     };
@@ -145,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectCards.forEach(card => {
         card.addEventListener('click', () => {
             const html = document.querySelector("html");
-            
+
             const modalId = card.dataset.modalTarget;
             const modal = document.getElementById(modalId);
             if (modal) {
@@ -166,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const closeBtn = modal.querySelector('.close-btn');
         closeBtn.addEventListener('click', () => {
-                html.style.overflowY = "visible"
+            html.style.overflowY = "visible"
             modal.style.display = 'none';
         });
 
@@ -181,14 +231,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // --- SCRIPT POUR LE FORMULAIRE DE CONTACT AVEC EMAILJS ---
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
 
     // Make sure the form exists before trying to add an event listener
     if (contactForm) {
         emailjs.init("_ubXQnsSOBr-aPYPr");
 
-        contactForm.addEventListener('submit', function(event) {
+        contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
             // Get form values
@@ -209,10 +259,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const templateID = "template_89pkfcf"; // This template ID was provided by the user
 
             emailjs.send(serviceID, templateID, templateParams)
-                .then(function(response) {
+                .then(function (response) {
                     alert("Message envoyé avec succès !");
                     contactForm.reset(); // Clear the form after successful submission
-                }, function(error) {
+                }, function (error) {
                     console.error("Erreur lors de l'envoi du message :", error); // Log error for debugging
                     alert("Erreur lors de l'envoi du message. Veuillez réessayer plus tard.");
                 });
